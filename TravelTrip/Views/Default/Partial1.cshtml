@@ -1,0 +1,15 @@
+﻿<div class="padding1">
+    <h4>EN SEVİLENLER!</h4>
+    @foreach (var item in Model)
+    {
+        <div class="box-left">
+            <div class="bot-img">
+                <img src="@item.BlogImage" alt="" />
+            </div>
+            <div class="bot-desc">
+                <p>@item.Description</p>
+            </div>
+
+        </div>
+    }
+</div>

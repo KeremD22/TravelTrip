@@ -1,0 +1,48 @@
+﻿@model TravelTrip.Models.Concrete.Contact
+@{
+    ViewBag.Title = "Destek";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+    <div class="contact">
+        <div class="wrap">
+            <div class="contact-top">
+                <h3 style="text-align:center">İletişim Sayfası</h3>
+                <img style="margin-left:200px; width:600px;height:400px" src="~/Templates/web/images/kateryna-t-RkyYEVHrRbo-unsplash.jpg"<img />
+                <p> </p>
+            </div>
+            <form class="form-group" method="post">
+
+                <label>İsminiz</label>
+                @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                <br />
+                <label>Konu</label>
+                @Html.TextBoxFor(x => x.Subject, new { @class = "form-control" })
+                <br />
+                <label>Mail</label>
+                @Html.TextBoxFor(x => x.Mail, new { @class = "form-control" })
+                <br />
+                <label>Şikayet/Destek</label>
+                @Html.TextAreaFor(x => x.Message, new { @class = "form-control" })
+                <br />
+                <button class="btn btn-primary">Gönder</button>
+                <br />
+                <br />
+            </form>
+
+
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+</body>
+</html>
